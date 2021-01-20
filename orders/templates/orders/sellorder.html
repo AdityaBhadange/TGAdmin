@@ -7,17 +7,16 @@
 
 {% block content %}
 	<div class="container m-3">
-		<div class="butons">
-			<button type="button" class="btn btn-info">Add New Product</button>
-			<button type="button" class="btn btn-primary">Edit Product</button>
-			<button type="button" class="btn btn-danger">Delete Product</button>
-		</div>
 		<div class="search-field mt-2 row align-items-start">
-			<div class="col-5">
+			<div class="col">
 				<div class="input-group">
 					<span class="input-group-text"><i class="fas fa-search"></i></span>
 					<input class="form-control form-control-sm" placeholder="Search here.." type="" name="">
 				</div>
+			</div>
+			<div class="col">
+				<button type="button" class="btn btn-primary">View Selected</button>
+				<button type="button" class="btn btn-danger">Delete Selected</button>
 			</div>
 		</div>
 		
@@ -27,18 +26,16 @@
 					<tr>
 						<th scope="col"><input type="checkbox" name=""></th>
 						<th scope="col">Sr. No.</th>
-						<th scope="col">Product ID</th>
-						<th scope="col">User ID</th>
-						<th scope="col">Catagory ID</th>
-						<th scope="col">Description</th>
-						<th scope="col">GST</th>
-						<th scope="col">Self Delivery Cost</th>
-						<th scope="col">Courier Self</th>
-						<th scope="col">Length</th>
-						<th scope="col">Width</th>
-						<th scope="col">WT</th>
-						<th scope="col">Delivery Partner Cost</th>
-						<th scope="col">Product Cost</th>
+						<th scope="col">Order ID</th>
+						<th scope="col">Date of order</th>
+						<th scope="col">Qty</th>
+						<th scope="col">Basic cost</th>
+						<th scope="col">Tax</th>
+						<th scope="col">Delivery Cost</th>
+						<th scope="col">Total cost</th>
+						<th scope="col">Status</th>
+						<th scope="col">Tracking ID</th>
+						<th scope="col">Shipment Date</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -46,8 +43,6 @@
 						<th scope="row"><input type="checkbox" name=""></th>
 						<th>1</th>
 						<th>3456</th>
-						<th>1</th>
-						<th>1</th>
 						<th>1</th>
 						<th>1</th>
 						<th>1</th>
@@ -71,15 +66,11 @@
 						<th>2</th>
 						<th>2</th>
 						<th>2</th>
-						<th>2</th>
-						<th>2</th>
 					</tr>
 					<tr>
 						<th scope="row"><input type="checkbox" name=""></th>
 						<th>3</th>
 						<th>3458</th>
-						<th>3</th>
-						<th>3</th>
 						<th>3</th>
 						<th>3</th>
 						<th>3</th>

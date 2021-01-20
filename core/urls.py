@@ -6,6 +6,7 @@ Copyright (c) 2019 - present AppSeed.us
 from django.contrib import admin
 from django.urls import path, include  # add this
 from product import views
+from orders import views as order_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
@@ -14,5 +15,6 @@ urlpatterns = [
     path("", include("app.urls")),             # UI Kits Html files
     path("product/", views.product, name="product"),
     path("dashboard/", views.dashboard, name="dashboard"),
+    path("sellorder/", order_view.sellorder, name="sellorder"),
 
 ]
