@@ -29,16 +29,28 @@
                     </li>                    
                     <li data-username="Dashboard charts loaded from a simple DB table" 
                         class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
-                        <a href="/charts-input" class="nav-link ">
+                        <a href="{% url 'sellorder' %}" class="nav-link ">
                             <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
                                 <span class="pcoded-mtext">Orders</span></a>
-                    </li>                    
-                    <li data-username="Dashboard charts loaded from load data" 
+                    </li>
+                    <li data-username="Dashboard charts loaded from a simple DB table" 
+                        class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
+                        <a href="{% url 'sellorder' %}" class="nav-link ">
+                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
+                                <span class="pcoded-mtext">Sell Order</span></a>
+                    </li>
+                    <li data-username="Dashboard charts loaded from a simple DB table" 
+                        class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
+                        <a href="{% url 'sellorder' %}" class="nav-link ">
+                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
+                                <span class="pcoded-mtext">Buyer</span></a>
+                    </li>                     
+                   <!--  <li data-username="Dashboard charts loaded from load data" 
                         class="nav-item {% if 'charts_from_load' == segment %} active {% endif %}">
                         <a href="/charts-load" class="nav-link ">
                             <span class="pcoded-micon"><i class="feather icon-bar-chart"></i></span>
                                 <span class="pcoded-mtext">Charts from Data</span></a>
-                    </li>                    
+                    </li>   -->                  
                     
                     <li class="nav-item pcoded-menu-caption">
                         <label>UI Element</label>

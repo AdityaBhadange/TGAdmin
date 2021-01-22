@@ -5,16 +5,15 @@ Copyright (c) 2019 - present AppSeed.us
 
 from django.contrib import admin
 from django.urls import path, include  # add this
-from product import views
-from orders import views as order_view
+# from product import views as product_views
+# from orders import views as orders_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
     # path('admin' , admin.site.urls),          # Django admin route 
     path("", include("authentication.urls")), # Auth routes - login / register
     path("", include("app.urls")),             # UI Kits Html files
-    path("product/", views.product, name="product"),
-    path("dashboard/", views.dashboard, name="dashboard"),
-    path("sellorder/", order_view.sellorder, name="sellorder"),
-
+    path("product/", include("product.urls"), name="product"),
+    path("sellorder/", include("orders.urls"), name="sellorder"),
 ]
