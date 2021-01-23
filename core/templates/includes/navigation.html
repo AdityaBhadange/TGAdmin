@@ -7,7 +7,7 @@
                     <div class="b-bg">
                         <i class="feather icon-trending-up"></i>
                     </div>
-                    <span class="b-title">Django Charts</span>
+                    <span class="b-title">TG Admin</span>
                 </a>
                 <a class="mobile-menu" id="mobile-collapse" href="javascript:"><span></span></a>
             </div>
@@ -26,50 +26,26 @@
                         <a href="{% url 'product' %}" class="nav-link ">
                             <span class="pcoded-micon"><i class="feather icon-bar-chart"></i></span>
                                 <span class="pcoded-mtext">Product</span></a>
-                    </li>                    
-                    <li data-username="Dashboard charts loaded from a simple DB table" 
-                        class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
-                        <a href="{% url 'sellorder' %}" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
-                                <span class="pcoded-mtext">Orders</span></a>
-                    </li>
-                    <li data-username="Dashboard charts loaded from a simple DB table" 
-                        class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
-                        <a href="{% url 'sellorder' %}" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
-                                <span class="pcoded-mtext">Sell Order</span></a>
-                    </li>
-                    <li data-username="Dashboard charts loaded from a simple DB table" 
-                        class="nav-item {% if 'charts_from_input' == segment %} active {% endif %}">
-                        <a href="{% url 'sellorder' %}" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
-                                <span class="pcoded-mtext">Buyer</span></a>
-                    </li>                     
-                   <!--  <li data-username="Dashboard charts loaded from load data" 
-                        class="nav-item {% if 'charts_from_load' == segment %} active {% endif %}">
-                        <a href="/charts-load" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-bar-chart"></i></span>
-                                <span class="pcoded-mtext">Charts from Data</span></a>
-                    </li>   -->                  
+                    </li>                 
                     
-                    <li class="nav-item pcoded-menu-caption">
+                    <!-- <li class="nav-item pcoded-menu-caption">
                         <label>UI Element</label>
-                    </li>
+                    </li> -->
                     <li data-username="basic components Button Alert Badges breadcrumb Paggination progress Tooltip popovers Carousel Cards Collapse Tabs pills Modal Grid System Typography Extra Shadows Embeds" class="nav-item pcoded-hasmenu">
-                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Components</span></a>
+                        <a href="javascript:" class="nav-link "><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Orders</span></a>
                         <ul class="pcoded-submenu">
-                            <li class=""><a href="/ui-button.html" class="">Button</a></li>
-                            <li class=""><a href="/ui-badges.html" class="">Badges</a></li>
-                            <li class=""><a href="/ui-breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
+                            <li class=""><a href="#" class="">Sell order</a></li>
+                            <li class=""><a href="#" class="">Buyer</a></li>
+                            <!-- <li class=""><a href="/ui-breadcrumb-pagination.html" class="">Breadcrumb & paggination</a></li>
                             <li class=""><a href="/ui-collapse.html" class="">Collapse</a></li>
                             <li class=""><a href="/ui-tabs.html" class="">Tabs & pills</a></li>
                             <li class=""><a href="/ui-typography.html" class="">Typography</a></li>
 
 
-                            <li class=""><a href="/ui-icons.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                            <li class=""><a href="/ui-icons.html" class="">Feather<span class="pcoded-badge label label-danger">NEW</span></a></li> -->
                         </ul>
                     </li>
-                    <li class="nav-item pcoded-menu-caption">
+                    <!-- <li class="nav-item pcoded-menu-caption">
                         <label>Forms & table</label>
                     </li>
                     <li data-username="form elements advance componant validation masking wizard picker select" 
@@ -93,7 +69,9 @@
                                 <span class="pcoded-mtext">Charts - JS Hardcoded</span></a></li>
                     <li data-username="Maps Google" class="nav-item {% if 'maps-google' in segment %} active {% endif %}">
                         <a href="/maps-google.html" class="nav-link ">
-                            <span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a></li>
+                            <span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span>
+                        </a>
+                    </li> -->
 
                     <li class="nav-item pcoded-menu-caption">
                         <label>Authentication</label>
@@ -110,14 +88,14 @@
 
                     <li data-username="Disabled Menu" class="nav-item">
                         {% if user.is_authenticated %}
-                            <a href={% url 'logout' %} class="nav-link">
+                            <a href="{% url 'logout' %}" class="nav-link">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-power"></i>
                                 </span>
                                 <span class="pcoded-mtext">Logout - [ {{ request.user.username }} ]</span>
                             </a>
                         {% else %}
-                            <a href={% url 'login' %} class="nav-link">
+                            <a href="{% url 'login' %}" class="nav-link">
                                 <span class="pcoded-micon">
                                     <i class="feather icon-user"></i>
                                 </span>

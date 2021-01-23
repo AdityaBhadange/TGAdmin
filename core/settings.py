@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'app',  # Enable the inner app
     'import_export',
     'product',
-    'orders',
+    "authentication",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -125,6 +125,7 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'core/static'),
+    os.path.join(BASE_DIR, 'authentication/static'),
 )
 #############################################################
 #############################################################

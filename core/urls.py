@@ -11,9 +11,7 @@ from django.urls import path, include  # add this
 
 urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
-    # path('admin' , admin.site.urls),          # Django admin route 
-    path("", include("authentication.urls")), # Auth routes - login / register
+    path("auth/", include("authentication.urls")), # Auth routes - login / signup
     path("", include("app.urls")),             # UI Kits Html files
     path("product/", include("product.urls"), name="product"),
-    path("sellorder/", include("orders.urls"), name="sellorder"),
 ]
