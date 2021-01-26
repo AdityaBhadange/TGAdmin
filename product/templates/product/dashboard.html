@@ -6,17 +6,51 @@
 {% block stylesheets %}{% endblock %}
 
 {% block content %}
-    <div class="container text-center">
-        <h1>Dashboard</h1>
-        <div class="sections">
-            <button class="btn btn-info btn-sm p-3" type="button">Product Section</button>
-            <button class="btn btn-info btn-lg p-3" type="button">Order Section</button>
-            <button class="btn btn-info btn-lg p-3" type="button">Sellers</button>
-            <button class="btn btn-info btn-lg p-3" type="button">Buyers</button>
+    <div class="container">
+        <h1 class="mt-5 text-info">Dashboard</h1>
+        
+        <div class="row mt-3">
+        	<div class="col-sm-6">
+        		<div class="card border border-primary">
+        			<div class="card-body">
+        				<h5 class="card-title">Products</h5>
+        				<p class="card-text">Go to products section for more info.</p>
+        				<a href="#" class="" title=""><i class="fas fa-arrow-right"></i></a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-sm-6">
+        		<div class="card border border-primary">
+        			<div class="card-body">
+		        		<h5 class="card-title">Orders</h5>
+		        		<p class="card-text">Go to orders section for more info.</p>
+		        		<a href="#" class="" title=""><i class="fas fa-arrow-right"></i></a>
+		        	</div>
+		        </div>
+        	</div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-6">
+        		<div class="card border border-primary">
+        			<div class="card-body">
+        				<h5 class="card-title">Seller</h5>
+        				<p class="card-text">Go to seller section for more info.</p>
+        				<a href="#" class="" title=""><i class="fas fa-arrow-right"></i></a>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-sm-6">
+        		<div class="card border border-info">
+        			<div class="card-body">
+		        		<h5 class="card-title">Buyer</h5>
+		        		<p class="card-text">Go to buyer section for more info.</p>
+		        		<a href="#" class="" title=""><i class="fas fa-arrow-right"></i></a>
+		        	</div>
+		        </div>
+        	</div>
         </div>
     </div>
-    
-
 
 {% endblock %}
 
