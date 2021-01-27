@@ -1,0 +1,58 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 403 Page {% endblock %}
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}   
+<div class="container">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Commission</h5>
+            </div>
+            <form class="form-horizontal" action="">
+              <div class="form-group">
+                  <label class="control-label col-sm-2" for="email">Group Name</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" value="">
+                                <option>whatsapp group</option>
+                                <option>facebook group</option>
+                                <option>Instagram group</option>
+                            </select>
+                      <!----    <input type="number" class="form-control" id="groupid" placeholder="group Id" name="groupid" required> -->
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-3" for="pwd">Category Name:</label>
+                        <div class="col-sm-10">          
+                            <!--<input class="form-c" type="number" />-->
+                            <select class="form-control" value="">
+                                <option> category 1</option>
+                                <option>category 2</option>
+                                <option>category 3</option>
+                                </select>
+                                  </div>
+                                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="email">company commission</label>
+                        <div class="col-sm-10">
+                          <input type="number" min="1" class="form-control" id="groupdate" required name="groupdate">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-4" for="email">Group commission</label>
+                        <div class="col-sm-10">
+                          <input type="number" min="1" class="form-control" id="groupdate" required name="groupdate">
+                        </div>
+                        <div class="mt-4">  
+                          <div class="col-sm-10">
+                            <button class="btn btn-primary" type="button">Save</button>  
+                          </div>
+                        </div>
+                      </div>
+                      </div> 
+                      </div>
+                    </form>
+            </div>
+      </div>
+  </div>
+{% endblock content %}

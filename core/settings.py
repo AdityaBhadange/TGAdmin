@@ -28,6 +28,10 @@ INSTALLED_APPS = [
     'app',  # Enable the inner app
     'import_export',
     'product',
+    'commission',
+    'groups',
+    'keywords',
+    'payment',
     "authentication",
     'django.contrib.admin',
     'django.contrib.auth',

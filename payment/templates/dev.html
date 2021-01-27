@@ -1,0 +1,78 @@
+{% extends "layouts/base.html" %}
+{% block title %} UI Forms {% endblock %}
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock %}
+{% block content %}
+    <div class="container m-2">
+        <div class="row"></div>
+        <div class="col-md-6">
+            <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Location
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Pune</a>
+                <a class="dropdown-item" href="#">Mumbai</a>
+                <a class="dropdown-item" href="#">sideny</a>
+                <a class="dropdown-item" href="#">Delhi</a>
+                <a class="dropdown-item" href="#">London</a>
+                <a class="dropdown-item" href="#">Tokiyo</a>
+                <a class="dropdown-item" href="#">Washington</a>
+
+            </div>
+         </div>
+
+            <div class="button">
+            <button type="button" class="btn btn-info">Add New Product</button>
+            <button type="button" class="btn btn-primary">Edit Product</button>
+            <button type="button" class="btn btn-danger">Delete Product(multiple)</button>
+            </div>
+            <div class="row mb-lg-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Lists of country
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">America</a>
+                        <a class="dropdown-item" href="#">India</a>
+                        <a class="dropdown-item" href="#">Austrelia</a>
+                        <a class="dropdown-item" href="#">Koria</a>
+                        <a class="dropdown-item" href="#">Japan</a>
+                        <a class="dropdown-item" href="#">France</a>
+                        <a class="dropdown-item" href="#">Chiina</a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+                  <button type="button" class="btn btn-primary">Edit cities with country combinations</button>
+                <button type="button" class="btn btn-danger">Delete cities</button>
+                <br>
+                
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Lists of country
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">America</a>
+                            <a class="dropdown-item" href="#">India</a>
+                            <a class="dropdown-item" href="#">Austrelia</a>
+                            <a class="dropdown-item" href="#">Koria</a>
+                            <a class="dropdown-item" href="#">Japan</a>
+                            <a class="dropdown-item" href="#">France</a>
+                            <a class="dropdown-item" href="#">Chiina</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        </div>
+{% endblock %}
+
+
+{% block javascripts %}{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 403 Page {% endblock %}
+{% block stylesheets %}{% endblock stylesheets %}
+{% block content %} 
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Commission</h5>
+                </div>
+            <div class="card-block">
+                <div class="search-field row align-items-start">
+                    <div class="col-md-6 mb-2">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <input class="form-control form-control-sm" placeholder="Search here.." type="" name="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <button type="button" class="btn btn-primary">Search group</button>
+                    </div>
+                </div>
+                <div class="table-responsive ">
+                    <table class=" table table-striped table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input type="checkbox" name=""></th>
+                                    <th scope="col">category id</th>
+                                    <th scope="col">Group Id</th>
+                                    <th scope="col">commpany commission</th>
+                                    <th scope="col">group commission</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" name=""></th>
+                                    <th>1</th>
+                                    <th>3456</th>
+                                    <th>23 %</th>
+                                    <th>11 %</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" name=""></th>
+                                    <th>2</th>
+                                    <th>3457</th>
+                                    <th>12 %</th>
+                                    <th>21 %</th>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" name=""></th>
+                                    <th>3</th>
+                                    <th>3458</th>
+                                    <th>12 %</th>
+                                    <th>25 %</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

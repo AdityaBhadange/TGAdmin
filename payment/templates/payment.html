@@ -1,0 +1,112 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} 403 Page {% endblock %}
+{% block stylesheets %}{% endblock stylesheets %}
+{% block content %}
+<div class="container">    
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Payment Transaction</h5>
+            </div>
+            <div class="card-block">
+            <div class="search-field row align-items-start">
+                <div class="col-md-6 mb-2">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        <input class="form-control form-control-sm" placeholder="Search here.." type="" name="">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <button type="button" class="btn btn-primary">Search group</button>
+                </div>
+                </div>
+            
+                <div class="table-responsive ">
+                <table class=" table table-striped table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox" name=""></th>
+                            <th scope="col">Sr. No.</th>
+                            <th scope="col">Product ID</th>
+                            <th scope="col">User ID</th>
+                            <th scope="col">Catagory ID</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">GST</th>
+                            <th scope="col">Self Delivery Cost</th>
+                            <th scope="col">Courier Self</th>
+                            <th scope="col">Length</th>
+                            <th scope="col">Width</th>
+                            <th scope="col">WT</th>
+                            <th scope="col">Delivery Partner Cost</th>
+                            <th scope="col">Product Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name=""></th>
+                            <th>1</th>
+                            <th>3456</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name=""></th>
+                            <th>2</th>
+                            <th>3457</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" name=""></th>
+                            <th>3</th>
+                            <th>3458</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+              <div class="row  mt-2">
+                  <div class="form-group col-sm-6">
+                      <button style="background-color:#cc99ff"  class="btn">total sale + commission field</button>
+                      <input class="form-control-sm" type="text">
+                  </div>      
+                  <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary">download</button>
+                  </div>
+              </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
