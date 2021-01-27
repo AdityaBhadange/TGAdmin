@@ -25,8 +25,6 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', config('SERVER', default='127.0.0.1')
 # Application definition
 
 INSTALLED_APPS = [
-    'app',  # Enable the inner app
-    'import_export',
     'product',
     'commission',
     'groups',
