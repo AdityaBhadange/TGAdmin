@@ -12,6 +12,10 @@ urlpatterns = [
     path("auth/", include("authentication.urls")), # Auth routes - login / signup
     path("", views.dashboard, name="dashboard"),
     path("product/", include("product.urls")),
+    path("user/", include("user.urls")),
+    path("category/", include("category.urls")),
+    path("tax/", include("tax.urls")),
+    path("country/", include("country.urls")),
     path("commission/", include("commission.urls")),
     path("groups/", include("groups.urls")),
     path("payment/", include("payment.urls")),
