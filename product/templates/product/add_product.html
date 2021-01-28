@@ -1,0 +1,67 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} UI Forms {% endblock %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock %}
+
+
+{% block content %}
+
+	<div class="container m-3">
+		<div class="card">
+			<div class="card-header">
+				<h4 class="text-info">Product</h4>
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Add New Product</h5>
+			</div>
+
+			<form class="m-3">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputDescription">Description</label>
+						<textarea type="text" class="form-control" name="" id="inputDescription" placeholder="Description" required></textarea>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="gst">GST</label>
+						<input class="form-control" type="text" id="gst" name="" placeholder="GST" required>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="courierSelf">Courier Self</label>
+						<input type="text" class="form-control" name="" id="courierSelf" placeholder="Courier Self" required></input>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="selfDeiveryCost">Self Delivery Cost</label>
+						<input class="form-control" type="text" id="selfDeiveryCost" name="" placeholder="Self Delivery Cost" required>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-group col-md-3">
+						<label for="length">Length</label>
+						<input type="text" class="form-control" name="" id="length" placeholder="Length" required></input>
+					</div>
+					<div class="form-group col-md-3">
+						<label for="width">Width</label>
+						<input type="text" class="form-control" name="" id="width" placeholder="Width" required></input>
+					</div>
+					<div class="form-group col-md-3">
+						<label for="dpt">Delivery Partner Cost</label>
+						<input type="text" class="form-control" name="" id="dpt" placeholder="Delivery Partner Cost" required></input>
+					</div>
+					<div class="form-group col-md-3">
+						<label for="productCost">Product Cost</label>
+						<input type="text" class="form-control" name="" id="productCost" placeholder="Product Cost" required></input>
+					</div>
+				</div>
+				<button class="btn btn-primary" type="submit">Submit</button>
+			</form>
+
+		</div>
+	</div>
+
+{% endblock %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock %}
