@@ -9,15 +9,14 @@
     <div class="container">
     <div class="container m-3">
 
-        <div class="container">
-            <div class="butons">
+        <div class="card-body">
+				<div class="buttons">
+					<a href="{% url 'add_country' %}" type="button" class="btn btn-info">Add New Country</a>
+					<a href="{% url 'edit_country' %}" type="button" class="btn btn-warning">Edit Country</a>
+					<a href="{% url 'list_country' %}" type="button" class="btn btn-primary">List of Countries</a>
+					<a href="{% url 'delete_country' %}" type="button" class="btn btn-danger">Delete Country</a>
 
-                <a href="{{ home }}">
-                    <button type="button" class="btn btn-primary">Add Location</button>
-                    <button type="button" class="btn btn-primary">Edit location</button>
-                </a>
-
-            </div>
+				</div>
 
             <div class="search-field mt-2 row align-items-start">
                 <div class="col-5">
@@ -53,7 +52,7 @@
 
 
                         <th>
-                        <button  class="btn btn-primary badge-pill">Edit</button>
+                        <button  class="btn btn-warning badge-pill">Edit</button>
                             </th>
 
 
@@ -66,7 +65,7 @@
                         <th>India</th>
 
 
-                        <th><button  class="btn btn-primary badge-pill">Edit</button>
+                        <th><button  class="btn btn-warning badge-pill">Edit</button>
                         </th>
 
 
@@ -79,7 +78,7 @@
                         <th>India</th>
 
 
-                        <th><button  class="btn btn-primary badge-pill">Edit</button>
+                        <th><button  class="btn btn-warning badge-pill">Edit</button>
                         </th>
 
 

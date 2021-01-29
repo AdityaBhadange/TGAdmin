@@ -6,5 +6,16 @@ def signup(request):
 def user(request):
     return render(request, "user/user.html")
 
-def notification(request):
-    return render(request, "user/notification.html")
+def list(request):
+    return render(request, "user/list_user.html")
+
+
+def add(request):
+    return render(request, "user/add_user.html")
+
+
+def edit(request):
+    return render(request, "user/edit_user.html")
+
+def delete(request):
+    return render(request, "user/delete_user.html")

@@ -11,10 +11,10 @@
 
         <div class="container">
             <div class="butons">
+     <a href="{% url 'add_category' %}" type="button" class="btn btn-info">Add Category</a>
+     <a href="{% url 'edit_category' %}" type="button" class="btn btn-warning">edit Category</a>
+     <a href="{% url 'delete_category' %}" type="button" class="btn btn-danger">delete Category</a>
 
-                <a href="{{ home }}">
-                    <button type="button" class="btn btn-primary">Add Category</button>
-                    <button type="button" class="btn btn-primary">Edit Category</button>
                 </a>
 
             </div>
@@ -59,7 +59,7 @@
                         <th>1</th>
                         <th>1</th>
                         <th>
-                        <button  class="btn btn-primary badge-pill">Edit</button>
+                        <button  class="btn btn-warning badge-pill">Edit</button>
                             </th>
 
 
@@ -74,7 +74,7 @@
                         <th>2</th>
                         <th>2</th>
                         <th>2</th>
-                        <th><button  class="btn btn-primary badge-pill">Edit</button>
+                        <th><button  class="btn btn-warning badge-pill">Edit</button>
                         </th>
 
 
@@ -89,7 +89,7 @@
                         <th>3</th>
                         <th>3</th>
                         <th>3</th>
-                        <th><button  class="btn btn-primary badge-pill">Edit</button>
+                        <th><button  class="btn btn-warning badge-pill">Edit</button>
                         </th>
 
 

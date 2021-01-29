@@ -9,15 +9,13 @@
     <div class="container">
     <div class="container m-3">
 
-        <div class="container">
-            <div class="butons">
-
-                <a href="{{ home }}">
-                    <button type="button" class="btn btn-primary">Add Tax</button>
-                    <button type="button" class="btn btn-primary">Edit Tax</button>
-                </a>
-
-            </div>
+        <div class="card-body">
+				<div class="buttons">
+					<a href="{% url 'add_tax' %}" type="button" class="btn btn-info">Add New tax</a>
+					<a href="{% url 'edit_tax' %}" type="button" class="btn btn-warning">Edit tax</a>
+					<a href="{% url 'list_tax' %}" type="button" class="btn btn-primary">List of taxes</a>
+					<a href="{% url 'delete_tax' %}" type="button" class="btn btn-danger">Delete tax</a>
+				</div>
 
 
            <div class="search-field mt-2 row align-items-start">
@@ -44,7 +42,7 @@
 								<th scope="col">Total after  tax</th>
 								<th scope="col">Total discount</th>
 								<th scope="col">Delivery Partner Cost</th>
-								<th scope="col">Final Product Cost</th>
+								<th scope="col">Final tax Cost</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -57,7 +55,7 @@
 								<th>1</th>
 								<th>1</th>
 								<th>1</th>
-                                <th><button class="btn btn-primary badge-pill">Edit</button>
+                                <th><button class="btn btn-warning badge-pill">Edit</button>
 
 							</tr>
 							<tr>
@@ -69,7 +67,7 @@
 								<th>2</th>
 								<th>2</th>
 								<th>2</th>
-                                <th><button class="btn btn-primary badge-pill">Edit</button>
+                                <th><button class="btn btn-warning badge-pill">Edit</button>
 
 
 							</tr>
@@ -82,7 +80,7 @@
 								<th>3</th>
 								<th>3</th>
 								<th>3</th>
-								<th><button class="btn btn-primary badge-pill">Edit</button>
+								<th><button class="btn btn-warning badge-pill">Edit</button>
 
 							</tr>
 						</tbody>

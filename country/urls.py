@@ -4,10 +4,10 @@ from . import views
 
 urlpatterns = [
     path( "", views.country, name="country"),
-    path( "edit", views.edit, name="edit"),
-    path( "list", views.list_country, name="list"),
-    path( "delete", views.delete, name="delete"),
-    path( "combination", views.combination, name="combination"),
-    path( "combination_del", views.combination_del, name="combination_del"),
+    path( "edit/", views.edit, name="edit_country"),
+    path( "list/", views.list, name="list_country"),
+    path( "add/", views.add, name="add_country"),
+    path( "delete/", views.delete, name="delete_country"),
+
 ]
 
